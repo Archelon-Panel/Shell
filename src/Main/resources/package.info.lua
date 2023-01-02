@@ -16,7 +16,11 @@ return { InfoVersion = 1, -- Dont touch this
 
     Dependencies = {
         Luvit = {
-            
+            "truemedian/rethink-luvit",
+            "creationix/uuid4",
+            "creationix/weblit",
+            "creationix/mime",
+            "creationix/sha1"
         },
         Git = {},
         Dua = {}
