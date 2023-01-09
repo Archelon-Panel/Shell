@@ -1,0 +1,73 @@
+.topbar-container {
+    padding: 10px;
+    width: 100%;
+    height: 80px;
+
+    .topbar {
+        padding: 10px;
+        max-width: 1000px;
+        height: 100%;
+        border-radius: 20px;
+        background-color: var(--background-tertiary);
+        position: relative;
+        margin: auto;
+
+        .logo {
+            height: 100%;
+            float: left;
+            margin-right: 10px;
+            fill: var(--text-normal);
+            width: 40px;
+        }
+
+        .title {
+            font-weight: bold;
+            height: 100%;
+            display: inline-block;
+            line-height: 40px;
+        }
+
+        .control {
+            float: right;
+            height: 100%;
+            background-color: var(--background-tertiary);
+            border-radius: 20px;
+
+            a {
+                height: 20px;
+                line-height: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                overflow: hidden;
+                float: left;
+                color: var(--text-normal);
+                transition: max-width 0.5s, margin-right 0.1s;
+                transition-delay: 0s;
+                white-space: nowrap;
+            }
+
+            svg {
+                height: 100%;
+                fill: var(--text-normal)
+            }
+
+            &:hover, &.active {
+                background-color: var(--background-accent);
+                a {
+                    max-width: var(--hover-width) !important;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.content {
+    width: 100%;
+    height: auto;
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}

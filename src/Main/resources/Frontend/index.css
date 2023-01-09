@@ -1,0 +1,66 @@
+.topbar-container {
+  padding: 10px;
+  width: 100%;
+  height: 80px;
+}
+.topbar-container .topbar {
+  padding: 10px;
+  max-width: 1000px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: var(--background-tertiary);
+  position: relative;
+  margin: auto;
+}
+.topbar-container .topbar .logo {
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+  fill: var(--text-normal);
+  width: 40px;
+}
+.topbar-container .topbar .title {
+  font-weight: bold;
+  height: 100%;
+  display: inline-block;
+  line-height: 40px;
+}
+.topbar-container .topbar .control {
+  float: right;
+  height: 100%;
+  background-color: var(--background-tertiary);
+  border-radius: 20px;
+}
+.topbar-container .topbar .control a {
+  height: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  overflow: hidden;
+  float: left;
+  color: var(--text-normal);
+  transition: max-width 0.5s, margin-right 0.1s;
+  transition-delay: 0s;
+  white-space: nowrap;
+}
+.topbar-container .topbar .control svg {
+  height: 100%;
+  fill: var(--text-normal);
+}
+.topbar-container .topbar .control:hover,
+.topbar-container .topbar .control.active {
+  background-color: var(--background-accent);
+}
+.topbar-container .topbar .control:hover a,
+.topbar-container .topbar .control.active a {
+  max-width: var(--hover-width) !important;
+  margin-right: 10px;
+}
+.content {
+  width: 100%;
+  height: auto;
+}
+.content iframe {
+  width: 100%;
+  height: auto;
+}

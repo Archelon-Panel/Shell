@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+    <head>
+        <!-- Mega tags -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Styling -->
+        <link rel="stylesheet" href="/assets/style/index.css">
+        <!-- Scripts -->
+        <script src="/assets/script/index.js" type="module"></script>
+        <!-- Local Assets -->
+        <script src="./index.js"></script>
+        <link rel="stylesheet" href="./index.css">
+        <!-- Title -->
+        <title>Archelon</title>
+    </head>
+    <body>
+        <div class="topbar-container">
+            <div class="topbar">
+                <img src="/assets/image/logo-black.svg" class="logo">
+                <a class="title">Archelon</a>
+
+                <button class="control" onclick="location.href='/auth/logout'">
+                    <a>Logout</a>
+                    <img src="/assets/image/icon/right-from-bracket.svg">
+                </button>
+                <button class="control" id="page-settings">
+                    <a>Settings</a>
+                    <img src="/assets/image/icon/gears.svg" style="fill: white">
+                </button>
+                <button class="control" id="page-servers">
+                    <a>Servers</a>
+                    <img src="/assets/image/icon/server.svg">
+                </button>
+                <button class="control" id="page-admin">
+                    <a>Admin Panel</a>
+                    <img src="/assets/image/icon/screwdriver-wrench.svg">
+                </button>
+                
+                <script>
+                    for (const Button of document.currentScript.parentNode.querySelectorAll(".control")) {
+                        const Label = Button.querySelector("a")
+                        const MaxWidth = Label.clientWidth
+                        Label.style.setProperty("--hover-width", `${MaxWidth}px`)
+                        Label.style.maxWidth = "0px"
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <iframe src="" frameborder="0" id="contentframe"></iframe>
+        </div>
+    </body>
+</html>
