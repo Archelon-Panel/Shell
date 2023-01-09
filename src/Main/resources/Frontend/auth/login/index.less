@@ -1,0 +1,67 @@
+.container {
+    width: 50%;
+    height: 50%;
+    background-color: var(--background-tertiary);
+    border-radius: 20px;
+    padding: 20px;
+    margin: auto;
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+    .title {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        display: inline-block;
+    }
+
+    .subcontainer {
+        width: 50%;
+        height: 90%;
+        float: left;
+    }
+
+    .branding {
+        padding: 30px;
+        .logo {
+            width: 100%;
+            height: 100%;
+            fill: var(--text-normal);
+        }
+    }
+
+    .login {
+        input {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        width: calc(50% - 20px);
+        height: auto;
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+
+        .error {
+            color: var(--text-danger);
+        }
+
+        button {
+            width: 50%;
+            margin-left: 25%;
+            background-color: var(--interactive-normal);
+
+            &:hover {
+                background-color: var(--interactive-hover);
+            }
+        }
+    }
+}
